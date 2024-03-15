@@ -1,0 +1,17 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::5070" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "nex-502616", "toid": "cat-502616", "hl_id": "03W2537", "hl_uri": "HUC12-031602050201,Gages-02378500", "type": "poi" }, "geometry": { "type": "Point", "coordinates": [ 784543.14118934632279, 863261.509205005597323 ] } },
+{ "type": "Feature", "properties": { "id": "nex-502615", "toid": "cat-502615", "hl_id": null, "hl_uri": "NA", "type": "nexus" }, "geometry": { "type": "Point", "coordinates": [ 783146.349208069732413, 867527.435499490587972 ] } },
+{ "type": "Feature", "properties": { "id": "nex-502614", "toid": "cat-502614", "hl_id": null, "hl_uri": "NA", "type": "nexus" }, "geometry": { "type": "Point", "coordinates": [ 781871.30355949793011, 870850.714075681637041 ] } },
+{ "type": "Feature", "properties": { "id": "nex-502613", "toid": "cat-502613", "hl_id": null, "hl_uri": "NA", "type": "nexus" }, "geometry": { "type": "Point", "coordinates": [ 784234.574613020173274, 875002.914903351687826 ] } },
+{ "type": "Feature", "properties": { "id": "nex-502612", "toid": "cat-502612", "hl_id": null, "hl_uri": "NA", "type": "nexus" }, "geometry": { "type": "Point", "coordinates": [ 783607.205487782252021, 879818.960884373751469 ] } },
+{ "type": "Feature", "properties": { "id": "nex-502648", "toid": "cat-502648", "hl_id": null, "hl_uri": "NA", "type": "nexus" }, "geometry": { "type": "Point", "coordinates": [ 780435.036706393351778, 872941.077236408833414 ] } },
+{ "type": "Feature", "properties": { "id": "nex-502646", "toid": "cat-502646", "hl_id": null, "hl_uri": "NA", "type": "nexus" }, "geometry": { "type": "Point", "coordinates": [ 784651.091048911563121, 869560.830600119428709 ] } },
+{ "type": "Feature", "properties": { "id": "nex-502645", "toid": "cat-502645", "hl_id": null, "hl_uri": "NA", "type": "nexus" }, "geometry": { "type": "Point", "coordinates": [ 785062.55750700540375, 870250.512885383795947 ] } },
+{ "type": "Feature", "properties": { "id": "nex-502641", "toid": "cat-502641", "hl_id": null, "hl_uri": "NA", "type": "nexus" }, "geometry": { "type": "Point", "coordinates": [ 788008.590037845657207, 867886.199516889988445 ] } },
+{ "type": "Feature", "properties": { "id": "nex-502643", "toid": "cat-502643", "hl_id": null, "hl_uri": "NA", "type": "nexus" }, "geometry": { "type": "Point", "coordinates": [ 782121.341561082866974, 865269.523454533657059 ] } },
+{ "type": "Feature", "properties": { "id": "nex-502642", "toid": "cat-502642", "hl_id": null, "hl_uri": "NA", "type": "nexus" }, "geometry": { "type": "Point", "coordinates": [ 781517.644020130508579, 865810.675663411733694 ] } }
+]
+}
