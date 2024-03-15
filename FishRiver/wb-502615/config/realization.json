@@ -1,0 +1,1209 @@
+{
+    "catchments": {
+        "cat-502611": {
+            "formulations": [
+                {
+                    "name": "bmi_multi",
+                    "params": {
+                        "name": "bmi_multi",
+                        "model_type_name": "NoahOWP_CFE",
+                        "main_output_variable": "Q_OUT",
+                        "init_config": "",
+                        "allow_exceed_end_time": false,
+                        "fixed_time_step": false,
+                        "uses_forcing_file": false,
+                        "modules": [
+                            {
+                                "name": "bmi_c",
+                                "params": {
+                                    "name": "bmi_c",
+                                    "model_type_name": "CFE",
+                                    "main_output_variable": "Q_OUT",
+                                    "init_config": "/ngen/wb-538789/config/cat-502611_config.ini",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": true,
+                                    "forcing_file": "./cat-502611.csv",
+                                    "variables_names_map": {
+                                        "atmosphere_water__liquid_equivalent_precipitation_rate": "precip_rate",
+                                        "water_potential_evaporation_flux": "EVAPOTRANS",
+                                        "ice_fraction_schaake": "sloth_ice_fraction_schaake",
+                                        "ice_fraction_xinan": "sloth_ice_fraction_xinan",
+                                        "soil_moisture_profile": "sloth_smp"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libcfebmi.so.1.0.0",
+                                    "registration_function": "register_bmi_cfe"
+                                }
+                            },
+                            {
+                                "name": "bmi_c++",
+                                "params": {
+                                    "name": "bmi_c++",
+                                    "model_type_name": "SLOTH",
+                                    "main_output_variable": "z",
+                                    "init_config": "/dev/null",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": false,
+                                    "model_params": {
+                                        "sloth_ice_fraction_schaake(1,double,m,node)": "0.0",
+                                        "sloth_ice_fraction_xinan(1,double,1,node)": "0.0",
+                                        "sloth_smp(1,double,1,node)": "0.0",
+                                        "EVAPOTRANS": "0.0"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libslothmodel.so",
+                                    "registration_function": "none"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "forcing": {
+                "path": "./cat-502611.csv"
+            }
+        },
+        "cat-502653": {
+            "formulations": [
+                {
+                    "name": "bmi_multi",
+                    "params": {
+                        "name": "bmi_multi",
+                        "model_type_name": "NoahOWP_CFE",
+                        "main_output_variable": "Q_OUT",
+                        "init_config": "",
+                        "allow_exceed_end_time": false,
+                        "fixed_time_step": false,
+                        "uses_forcing_file": false,
+                        "modules": [
+                            {
+                                "name": "bmi_c",
+                                "params": {
+                                    "name": "bmi_c",
+                                    "model_type_name": "CFE",
+                                    "main_output_variable": "Q_OUT",
+                                    "init_config": "/ngen/wb-538789/config/cat-502653_config.ini",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": true,
+                                    "forcing_file": "./cat-502653.csv",
+                                    "variables_names_map": {
+                                        "atmosphere_water__liquid_equivalent_precipitation_rate": "precip_rate",
+                                        "water_potential_evaporation_flux": "EVAPOTRANS",
+                                        "ice_fraction_schaake": "sloth_ice_fraction_schaake",
+                                        "ice_fraction_xinan": "sloth_ice_fraction_xinan",
+                                        "soil_moisture_profile": "sloth_smp"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libcfebmi.so.1.0.0",
+                                    "registration_function": "register_bmi_cfe"
+                                }
+                            },
+                            {
+                                "name": "bmi_c++",
+                                "params": {
+                                    "name": "bmi_c++",
+                                    "model_type_name": "SLOTH",
+                                    "main_output_variable": "z",
+                                    "init_config": "/dev/null",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": false,
+                                    "model_params": {
+                                        "sloth_ice_fraction_schaake(1,double,m,node)": "0.0",
+                                        "sloth_ice_fraction_xinan(1,double,1,node)": "0.0",
+                                        "sloth_smp(1,double,1,node)": "0.0",
+                                        "EVAPOTRANS": "0.0"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libslothmodel.so",
+                                    "registration_function": "none"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "forcing": {
+                "path": "./cat-502653.csv"
+            }
+        },
+        "cat-502612": {
+            "formulations": [
+                {
+                    "name": "bmi_multi",
+                    "params": {
+                        "name": "bmi_multi",
+                        "model_type_name": "NoahOWP_CFE",
+                        "main_output_variable": "Q_OUT",
+                        "init_config": "",
+                        "allow_exceed_end_time": false,
+                        "fixed_time_step": false,
+                        "uses_forcing_file": false,
+                        "modules": [
+                            {
+                                "name": "bmi_c",
+                                "params": {
+                                    "name": "bmi_c",
+                                    "model_type_name": "CFE",
+                                    "main_output_variable": "Q_OUT",
+                                    "init_config": "/ngen/wb-538789/config/cat-502612_config.ini",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": true,
+                                    "forcing_file": "./cat-502612.csv",
+                                    "variables_names_map": {
+                                        "atmosphere_water__liquid_equivalent_precipitation_rate": "precip_rate",
+                                        "water_potential_evaporation_flux": "EVAPOTRANS",
+                                        "ice_fraction_schaake": "sloth_ice_fraction_schaake",
+                                        "ice_fraction_xinan": "sloth_ice_fraction_xinan",
+                                        "soil_moisture_profile": "sloth_smp"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libcfebmi.so.1.0.0",
+                                    "registration_function": "register_bmi_cfe"
+                                }
+                            },
+                            {
+                                "name": "bmi_c++",
+                                "params": {
+                                    "name": "bmi_c++",
+                                    "model_type_name": "SLOTH",
+                                    "main_output_variable": "z",
+                                    "init_config": "/dev/null",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": false,
+                                    "model_params": {
+                                        "sloth_ice_fraction_schaake(1,double,m,node)": "0.0",
+                                        "sloth_ice_fraction_xinan(1,double,1,node)": "0.0",
+                                        "sloth_smp(1,double,1,node)": "0.0",
+                                        "EVAPOTRANS": "0.0"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libslothmodel.so",
+                                    "registration_function": "none"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "forcing": {
+                "path": "./cat-502612.csv"
+            }
+        },
+        "cat-502652": {
+            "formulations": [
+                {
+                    "name": "bmi_multi",
+                    "params": {
+                        "name": "bmi_multi",
+                        "model_type_name": "NoahOWP_CFE",
+                        "main_output_variable": "Q_OUT",
+                        "init_config": "",
+                        "allow_exceed_end_time": false,
+                        "fixed_time_step": false,
+                        "uses_forcing_file": false,
+                        "modules": [
+                            {
+                                "name": "bmi_c",
+                                "params": {
+                                    "name": "bmi_c",
+                                    "model_type_name": "CFE",
+                                    "main_output_variable": "Q_OUT",
+                                    "init_config": "/ngen/wb-538789/config/cat-502652_config.ini",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": true,
+                                    "forcing_file": "./cat-502652.csv",
+                                    "variables_names_map": {
+                                        "atmosphere_water__liquid_equivalent_precipitation_rate": "precip_rate",
+                                        "water_potential_evaporation_flux": "EVAPOTRANS",
+                                        "ice_fraction_schaake": "sloth_ice_fraction_schaake",
+                                        "ice_fraction_xinan": "sloth_ice_fraction_xinan",
+                                        "soil_moisture_profile": "sloth_smp"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libcfebmi.so.1.0.0",
+                                    "registration_function": "register_bmi_cfe"
+                                }
+                            },
+                            {
+                                "name": "bmi_c++",
+                                "params": {
+                                    "name": "bmi_c++",
+                                    "model_type_name": "SLOTH",
+                                    "main_output_variable": "z",
+                                    "init_config": "/dev/null",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": false,
+                                    "model_params": {
+                                        "sloth_ice_fraction_schaake(1,double,m,node)": "0.0",
+                                        "sloth_ice_fraction_xinan(1,double,1,node)": "0.0",
+                                        "sloth_smp(1,double,1,node)": "0.0",
+                                        "EVAPOTRANS": "0.0"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libslothmodel.so",
+                                    "registration_function": "none"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "forcing": {
+                "path": "./cat-502652.csv"
+            }
+        },
+        "cat-502651": {
+            "formulations": [
+                {
+                    "name": "bmi_multi",
+                    "params": {
+                        "name": "bmi_multi",
+                        "model_type_name": "NoahOWP_CFE",
+                        "main_output_variable": "Q_OUT",
+                        "init_config": "",
+                        "allow_exceed_end_time": false,
+                        "fixed_time_step": false,
+                        "uses_forcing_file": false,
+                        "modules": [
+                            {
+                                "name": "bmi_c",
+                                "params": {
+                                    "name": "bmi_c",
+                                    "model_type_name": "CFE",
+                                    "main_output_variable": "Q_OUT",
+                                    "init_config": "/ngen/wb-538789/config/cat-502651_config.ini",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": true,
+                                    "forcing_file": "./cat-502651.csv",
+                                    "variables_names_map": {
+                                        "atmosphere_water__liquid_equivalent_precipitation_rate": "precip_rate",
+                                        "water_potential_evaporation_flux": "EVAPOTRANS",
+                                        "ice_fraction_schaake": "sloth_ice_fraction_schaake",
+                                        "ice_fraction_xinan": "sloth_ice_fraction_xinan",
+                                        "soil_moisture_profile": "sloth_smp"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libcfebmi.so.1.0.0",
+                                    "registration_function": "register_bmi_cfe"
+                                }
+                            },
+                            {
+                                "name": "bmi_c++",
+                                "params": {
+                                    "name": "bmi_c++",
+                                    "model_type_name": "SLOTH",
+                                    "main_output_variable": "z",
+                                    "init_config": "/dev/null",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": false,
+                                    "model_params": {
+                                        "sloth_ice_fraction_schaake(1,double,m,node)": "0.0",
+                                        "sloth_ice_fraction_xinan(1,double,1,node)": "0.0",
+                                        "sloth_smp(1,double,1,node)": "0.0",
+                                        "EVAPOTRANS": "0.0"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libslothmodel.so",
+                                    "registration_function": "none"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "forcing": {
+                "path": "./cat-502651.csv"
+            }
+        },
+        "cat-502613": {
+            "formulations": [
+                {
+                    "name": "bmi_multi",
+                    "params": {
+                        "name": "bmi_multi",
+                        "model_type_name": "NoahOWP_CFE",
+                        "main_output_variable": "Q_OUT",
+                        "init_config": "",
+                        "allow_exceed_end_time": false,
+                        "fixed_time_step": false,
+                        "uses_forcing_file": false,
+                        "modules": [
+                            {
+                                "name": "bmi_c",
+                                "params": {
+                                    "name": "bmi_c",
+                                    "model_type_name": "CFE",
+                                    "main_output_variable": "Q_OUT",
+                                    "init_config": "/ngen/wb-538789/config/cat-502613_config.ini",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": true,
+                                    "forcing_file": "./cat-502613.csv",
+                                    "variables_names_map": {
+                                        "atmosphere_water__liquid_equivalent_precipitation_rate": "precip_rate",
+                                        "water_potential_evaporation_flux": "EVAPOTRANS",
+                                        "ice_fraction_schaake": "sloth_ice_fraction_schaake",
+                                        "ice_fraction_xinan": "sloth_ice_fraction_xinan",
+                                        "soil_moisture_profile": "sloth_smp"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libcfebmi.so.1.0.0",
+                                    "registration_function": "register_bmi_cfe"
+                                }
+                            },
+                            {
+                                "name": "bmi_c++",
+                                "params": {
+                                    "name": "bmi_c++",
+                                    "model_type_name": "SLOTH",
+                                    "main_output_variable": "z",
+                                    "init_config": "/dev/null",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": false,
+                                    "model_params": {
+                                        "sloth_ice_fraction_schaake(1,double,m,node)": "0.0",
+                                        "sloth_ice_fraction_xinan(1,double,1,node)": "0.0",
+                                        "sloth_smp(1,double,1,node)": "0.0",
+                                        "EVAPOTRANS": "0.0"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libslothmodel.so",
+                                    "registration_function": "none"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "forcing": {
+                "path": "./cat-502613.csv"
+            }
+        },
+        "cat-502649": {
+            "formulations": [
+                {
+                    "name": "bmi_multi",
+                    "params": {
+                        "name": "bmi_multi",
+                        "model_type_name": "NoahOWP_CFE",
+                        "main_output_variable": "Q_OUT",
+                        "init_config": "",
+                        "allow_exceed_end_time": false,
+                        "fixed_time_step": false,
+                        "uses_forcing_file": false,
+                        "modules": [
+                            {
+                                "name": "bmi_c",
+                                "params": {
+                                    "name": "bmi_c",
+                                    "model_type_name": "CFE",
+                                    "main_output_variable": "Q_OUT",
+                                    "init_config": "/ngen/wb-538789/config/cat-502649_config.ini",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": true,
+                                    "forcing_file": "./cat-502649.csv",
+                                    "variables_names_map": {
+                                        "atmosphere_water__liquid_equivalent_precipitation_rate": "precip_rate",
+                                        "water_potential_evaporation_flux": "EVAPOTRANS",
+                                        "ice_fraction_schaake": "sloth_ice_fraction_schaake",
+                                        "ice_fraction_xinan": "sloth_ice_fraction_xinan",
+                                        "soil_moisture_profile": "sloth_smp"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libcfebmi.so.1.0.0",
+                                    "registration_function": "register_bmi_cfe"
+                                }
+                            },
+                            {
+                                "name": "bmi_c++",
+                                "params": {
+                                    "name": "bmi_c++",
+                                    "model_type_name": "SLOTH",
+                                    "main_output_variable": "z",
+                                    "init_config": "/dev/null",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": false,
+                                    "model_params": {
+                                        "sloth_ice_fraction_schaake(1,double,m,node)": "0.0",
+                                        "sloth_ice_fraction_xinan(1,double,1,node)": "0.0",
+                                        "sloth_smp(1,double,1,node)": "0.0",
+                                        "EVAPOTRANS": "0.0"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libslothmodel.so",
+                                    "registration_function": "none"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "forcing": {
+                "path": "./cat-502649.csv"
+            }
+        },
+        "cat-502648": {
+            "formulations": [
+                {
+                    "name": "bmi_multi",
+                    "params": {
+                        "name": "bmi_multi",
+                        "model_type_name": "NoahOWP_CFE",
+                        "main_output_variable": "Q_OUT",
+                        "init_config": "",
+                        "allow_exceed_end_time": false,
+                        "fixed_time_step": false,
+                        "uses_forcing_file": false,
+                        "modules": [
+                            {
+                                "name": "bmi_c",
+                                "params": {
+                                    "name": "bmi_c",
+                                    "model_type_name": "CFE",
+                                    "main_output_variable": "Q_OUT",
+                                    "init_config": "/ngen/wb-538789/config/cat-502648_config.ini",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": true,
+                                    "forcing_file": "./cat-502648.csv",
+                                    "variables_names_map": {
+                                        "atmosphere_water__liquid_equivalent_precipitation_rate": "precip_rate",
+                                        "water_potential_evaporation_flux": "EVAPOTRANS",
+                                        "ice_fraction_schaake": "sloth_ice_fraction_schaake",
+                                        "ice_fraction_xinan": "sloth_ice_fraction_xinan",
+                                        "soil_moisture_profile": "sloth_smp"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libcfebmi.so.1.0.0",
+                                    "registration_function": "register_bmi_cfe"
+                                }
+                            },
+                            {
+                                "name": "bmi_c++",
+                                "params": {
+                                    "name": "bmi_c++",
+                                    "model_type_name": "SLOTH",
+                                    "main_output_variable": "z",
+                                    "init_config": "/dev/null",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": false,
+                                    "model_params": {
+                                        "sloth_ice_fraction_schaake(1,double,m,node)": "0.0",
+                                        "sloth_ice_fraction_xinan(1,double,1,node)": "0.0",
+                                        "sloth_smp(1,double,1,node)": "0.0",
+                                        "EVAPOTRANS": "0.0"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libslothmodel.so",
+                                    "registration_function": "none"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "forcing": {
+                "path": "./cat-502648.csv"
+            }
+        },
+        "cat-502650": {
+            "formulations": [
+                {
+                    "name": "bmi_multi",
+                    "params": {
+                        "name": "bmi_multi",
+                        "model_type_name": "NoahOWP_CFE",
+                        "main_output_variable": "Q_OUT",
+                        "init_config": "",
+                        "allow_exceed_end_time": false,
+                        "fixed_time_step": false,
+                        "uses_forcing_file": false,
+                        "modules": [
+                            {
+                                "name": "bmi_c",
+                                "params": {
+                                    "name": "bmi_c",
+                                    "model_type_name": "CFE",
+                                    "main_output_variable": "Q_OUT",
+                                    "init_config": "/ngen/wb-538789/config/cat-502650_config.ini",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": true,
+                                    "forcing_file": "./cat-502650.csv",
+                                    "variables_names_map": {
+                                        "atmosphere_water__liquid_equivalent_precipitation_rate": "precip_rate",
+                                        "water_potential_evaporation_flux": "EVAPOTRANS",
+                                        "ice_fraction_schaake": "sloth_ice_fraction_schaake",
+                                        "ice_fraction_xinan": "sloth_ice_fraction_xinan",
+                                        "soil_moisture_profile": "sloth_smp"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libcfebmi.so.1.0.0",
+                                    "registration_function": "register_bmi_cfe"
+                                }
+                            },
+                            {
+                                "name": "bmi_c++",
+                                "params": {
+                                    "name": "bmi_c++",
+                                    "model_type_name": "SLOTH",
+                                    "main_output_variable": "z",
+                                    "init_config": "/dev/null",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": false,
+                                    "model_params": {
+                                        "sloth_ice_fraction_schaake(1,double,m,node)": "0.0",
+                                        "sloth_ice_fraction_xinan(1,double,1,node)": "0.0",
+                                        "sloth_smp(1,double,1,node)": "0.0",
+                                        "EVAPOTRANS": "0.0"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libslothmodel.so",
+                                    "registration_function": "none"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "forcing": {
+                "path": "./cat-502650.csv"
+            }
+        },
+        "cat-502614": {
+            "formulations": [
+                {
+                    "name": "bmi_multi",
+                    "params": {
+                        "name": "bmi_multi",
+                        "model_type_name": "NoahOWP_CFE",
+                        "main_output_variable": "Q_OUT",
+                        "init_config": "",
+                        "allow_exceed_end_time": false,
+                        "fixed_time_step": false,
+                        "uses_forcing_file": false,
+                        "modules": [
+                            {
+                                "name": "bmi_c",
+                                "params": {
+                                    "name": "bmi_c",
+                                    "model_type_name": "CFE",
+                                    "main_output_variable": "Q_OUT",
+                                    "init_config": "/ngen/wb-538789/config/cat-502614_config.ini",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": true,
+                                    "forcing_file": "./cat-502614.csv",
+                                    "variables_names_map": {
+                                        "atmosphere_water__liquid_equivalent_precipitation_rate": "precip_rate",
+                                        "water_potential_evaporation_flux": "EVAPOTRANS",
+                                        "ice_fraction_schaake": "sloth_ice_fraction_schaake",
+                                        "ice_fraction_xinan": "sloth_ice_fraction_xinan",
+                                        "soil_moisture_profile": "sloth_smp"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libcfebmi.so.1.0.0",
+                                    "registration_function": "register_bmi_cfe"
+                                }
+                            },
+                            {
+                                "name": "bmi_c++",
+                                "params": {
+                                    "name": "bmi_c++",
+                                    "model_type_name": "SLOTH",
+                                    "main_output_variable": "z",
+                                    "init_config": "/dev/null",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": false,
+                                    "model_params": {
+                                        "sloth_ice_fraction_schaake(1,double,m,node)": "0.0",
+                                        "sloth_ice_fraction_xinan(1,double,1,node)": "0.0",
+                                        "sloth_smp(1,double,1,node)": "0.0",
+                                        "EVAPOTRANS": "0.0"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libslothmodel.so",
+                                    "registration_function": "none"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "forcing": {
+                "path": "./cat-502614.csv"
+            }
+        },
+        "cat-502647": {
+            "formulations": [
+                {
+                    "name": "bmi_multi",
+                    "params": {
+                        "name": "bmi_multi",
+                        "model_type_name": "NoahOWP_CFE",
+                        "main_output_variable": "Q_OUT",
+                        "init_config": "",
+                        "allow_exceed_end_time": false,
+                        "fixed_time_step": false,
+                        "uses_forcing_file": false,
+                        "modules": [
+                            {
+                                "name": "bmi_c",
+                                "params": {
+                                    "name": "bmi_c",
+                                    "model_type_name": "CFE",
+                                    "main_output_variable": "Q_OUT",
+                                    "init_config": "/ngen/wb-538789/config/cat-502647_config.ini",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": true,
+                                    "forcing_file": "./cat-502647.csv",
+                                    "variables_names_map": {
+                                        "atmosphere_water__liquid_equivalent_precipitation_rate": "precip_rate",
+                                        "water_potential_evaporation_flux": "EVAPOTRANS",
+                                        "ice_fraction_schaake": "sloth_ice_fraction_schaake",
+                                        "ice_fraction_xinan": "sloth_ice_fraction_xinan",
+                                        "soil_moisture_profile": "sloth_smp"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libcfebmi.so.1.0.0",
+                                    "registration_function": "register_bmi_cfe"
+                                }
+                            },
+                            {
+                                "name": "bmi_c++",
+                                "params": {
+                                    "name": "bmi_c++",
+                                    "model_type_name": "SLOTH",
+                                    "main_output_variable": "z",
+                                    "init_config": "/dev/null",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": false,
+                                    "model_params": {
+                                        "sloth_ice_fraction_schaake(1,double,m,node)": "0.0",
+                                        "sloth_ice_fraction_xinan(1,double,1,node)": "0.0",
+                                        "sloth_smp(1,double,1,node)": "0.0",
+                                        "EVAPOTRANS": "0.0"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libslothmodel.so",
+                                    "registration_function": "none"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "forcing": {
+                "path": "./cat-502647.csv"
+            }
+        },
+        "cat-502645": {
+            "formulations": [
+                {
+                    "name": "bmi_multi",
+                    "params": {
+                        "name": "bmi_multi",
+                        "model_type_name": "NoahOWP_CFE",
+                        "main_output_variable": "Q_OUT",
+                        "init_config": "",
+                        "allow_exceed_end_time": false,
+                        "fixed_time_step": false,
+                        "uses_forcing_file": false,
+                        "modules": [
+                            {
+                                "name": "bmi_c",
+                                "params": {
+                                    "name": "bmi_c",
+                                    "model_type_name": "CFE",
+                                    "main_output_variable": "Q_OUT",
+                                    "init_config": "/ngen/wb-538789/config/cat-502645_config.ini",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": true,
+                                    "forcing_file": "./cat-502645.csv",
+                                    "variables_names_map": {
+                                        "atmosphere_water__liquid_equivalent_precipitation_rate": "precip_rate",
+                                        "water_potential_evaporation_flux": "EVAPOTRANS",
+                                        "ice_fraction_schaake": "sloth_ice_fraction_schaake",
+                                        "ice_fraction_xinan": "sloth_ice_fraction_xinan",
+                                        "soil_moisture_profile": "sloth_smp"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libcfebmi.so.1.0.0",
+                                    "registration_function": "register_bmi_cfe"
+                                }
+                            },
+                            {
+                                "name": "bmi_c++",
+                                "params": {
+                                    "name": "bmi_c++",
+                                    "model_type_name": "SLOTH",
+                                    "main_output_variable": "z",
+                                    "init_config": "/dev/null",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": false,
+                                    "model_params": {
+                                        "sloth_ice_fraction_schaake(1,double,m,node)": "0.0",
+                                        "sloth_ice_fraction_xinan(1,double,1,node)": "0.0",
+                                        "sloth_smp(1,double,1,node)": "0.0",
+                                        "EVAPOTRANS": "0.0"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libslothmodel.so",
+                                    "registration_function": "none"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "forcing": {
+                "path": "./cat-502645.csv"
+            }
+        },
+        "cat-502646": {
+            "formulations": [
+                {
+                    "name": "bmi_multi",
+                    "params": {
+                        "name": "bmi_multi",
+                        "model_type_name": "NoahOWP_CFE",
+                        "main_output_variable": "Q_OUT",
+                        "init_config": "",
+                        "allow_exceed_end_time": false,
+                        "fixed_time_step": false,
+                        "uses_forcing_file": false,
+                        "modules": [
+                            {
+                                "name": "bmi_c",
+                                "params": {
+                                    "name": "bmi_c",
+                                    "model_type_name": "CFE",
+                                    "main_output_variable": "Q_OUT",
+                                    "init_config": "/ngen/wb-538789/config/cat-502646_config.ini",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": true,
+                                    "forcing_file": "./cat-502646.csv",
+                                    "variables_names_map": {
+                                        "atmosphere_water__liquid_equivalent_precipitation_rate": "precip_rate",
+                                        "water_potential_evaporation_flux": "EVAPOTRANS",
+                                        "ice_fraction_schaake": "sloth_ice_fraction_schaake",
+                                        "ice_fraction_xinan": "sloth_ice_fraction_xinan",
+                                        "soil_moisture_profile": "sloth_smp"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libcfebmi.so.1.0.0",
+                                    "registration_function": "register_bmi_cfe"
+                                }
+                            },
+                            {
+                                "name": "bmi_c++",
+                                "params": {
+                                    "name": "bmi_c++",
+                                    "model_type_name": "SLOTH",
+                                    "main_output_variable": "z",
+                                    "init_config": "/dev/null",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": false,
+                                    "model_params": {
+                                        "sloth_ice_fraction_schaake(1,double,m,node)": "0.0",
+                                        "sloth_ice_fraction_xinan(1,double,1,node)": "0.0",
+                                        "sloth_smp(1,double,1,node)": "0.0",
+                                        "EVAPOTRANS": "0.0"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libslothmodel.so",
+                                    "registration_function": "none"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "forcing": {
+                "path": "./cat-502646.csv"
+            }
+        },
+        "cat-502615": {
+            "formulations": [
+                {
+                    "name": "bmi_multi",
+                    "params": {
+                        "name": "bmi_multi",
+                        "model_type_name": "NoahOWP_CFE",
+                        "main_output_variable": "Q_OUT",
+                        "init_config": "",
+                        "allow_exceed_end_time": false,
+                        "fixed_time_step": false,
+                        "uses_forcing_file": false,
+                        "modules": [
+                            {
+                                "name": "bmi_c",
+                                "params": {
+                                    "name": "bmi_c",
+                                    "model_type_name": "CFE",
+                                    "main_output_variable": "Q_OUT",
+                                    "init_config": "/ngen/wb-538789/config/cat-502615_config.ini",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": true,
+                                    "forcing_file": "./cat-502615.csv",
+                                    "variables_names_map": {
+                                        "atmosphere_water__liquid_equivalent_precipitation_rate": "precip_rate",
+                                        "water_potential_evaporation_flux": "EVAPOTRANS",
+                                        "ice_fraction_schaake": "sloth_ice_fraction_schaake",
+                                        "ice_fraction_xinan": "sloth_ice_fraction_xinan",
+                                        "soil_moisture_profile": "sloth_smp"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libcfebmi.so.1.0.0",
+                                    "registration_function": "register_bmi_cfe"
+                                }
+                            },
+                            {
+                                "name": "bmi_c++",
+                                "params": {
+                                    "name": "bmi_c++",
+                                    "model_type_name": "SLOTH",
+                                    "main_output_variable": "z",
+                                    "init_config": "/dev/null",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": false,
+                                    "model_params": {
+                                        "sloth_ice_fraction_schaake(1,double,m,node)": "0.0",
+                                        "sloth_ice_fraction_xinan(1,double,1,node)": "0.0",
+                                        "sloth_smp(1,double,1,node)": "0.0",
+                                        "EVAPOTRANS": "0.0"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libslothmodel.so",
+                                    "registration_function": "none"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "forcing": {
+                "path": "./cat-502615.csv"
+            }
+        },
+        "cat-502640": {
+            "formulations": [
+                {
+                    "name": "bmi_multi",
+                    "params": {
+                        "name": "bmi_multi",
+                        "model_type_name": "NoahOWP_CFE",
+                        "main_output_variable": "Q_OUT",
+                        "init_config": "",
+                        "allow_exceed_end_time": false,
+                        "fixed_time_step": false,
+                        "uses_forcing_file": false,
+                        "modules": [
+                            {
+                                "name": "bmi_c",
+                                "params": {
+                                    "name": "bmi_c",
+                                    "model_type_name": "CFE",
+                                    "main_output_variable": "Q_OUT",
+                                    "init_config": "/ngen/wb-538789/config/cat-502640_config.ini",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": true,
+                                    "forcing_file": "./cat-502640.csv",
+                                    "variables_names_map": {
+                                        "atmosphere_water__liquid_equivalent_precipitation_rate": "precip_rate",
+                                        "water_potential_evaporation_flux": "EVAPOTRANS",
+                                        "ice_fraction_schaake": "sloth_ice_fraction_schaake",
+                                        "ice_fraction_xinan": "sloth_ice_fraction_xinan",
+                                        "soil_moisture_profile": "sloth_smp"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libcfebmi.so.1.0.0",
+                                    "registration_function": "register_bmi_cfe"
+                                }
+                            },
+                            {
+                                "name": "bmi_c++",
+                                "params": {
+                                    "name": "bmi_c++",
+                                    "model_type_name": "SLOTH",
+                                    "main_output_variable": "z",
+                                    "init_config": "/dev/null",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": false,
+                                    "model_params": {
+                                        "sloth_ice_fraction_schaake(1,double,m,node)": "0.0",
+                                        "sloth_ice_fraction_xinan(1,double,1,node)": "0.0",
+                                        "sloth_smp(1,double,1,node)": "0.0",
+                                        "EVAPOTRANS": "0.0"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libslothmodel.so",
+                                    "registration_function": "none"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "forcing": {
+                "path": "./cat-502640.csv"
+            }
+        },
+        "cat-502641": {
+            "formulations": [
+                {
+                    "name": "bmi_multi",
+                    "params": {
+                        "name": "bmi_multi",
+                        "model_type_name": "NoahOWP_CFE",
+                        "main_output_variable": "Q_OUT",
+                        "init_config": "",
+                        "allow_exceed_end_time": false,
+                        "fixed_time_step": false,
+                        "uses_forcing_file": false,
+                        "modules": [
+                            {
+                                "name": "bmi_c",
+                                "params": {
+                                    "name": "bmi_c",
+                                    "model_type_name": "CFE",
+                                    "main_output_variable": "Q_OUT",
+                                    "init_config": "/ngen/wb-538789/config/cat-502641_config.ini",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": true,
+                                    "forcing_file": "./cat-502641.csv",
+                                    "variables_names_map": {
+                                        "atmosphere_water__liquid_equivalent_precipitation_rate": "precip_rate",
+                                        "water_potential_evaporation_flux": "EVAPOTRANS",
+                                        "ice_fraction_schaake": "sloth_ice_fraction_schaake",
+                                        "ice_fraction_xinan": "sloth_ice_fraction_xinan",
+                                        "soil_moisture_profile": "sloth_smp"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libcfebmi.so.1.0.0",
+                                    "registration_function": "register_bmi_cfe"
+                                }
+                            },
+                            {
+                                "name": "bmi_c++",
+                                "params": {
+                                    "name": "bmi_c++",
+                                    "model_type_name": "SLOTH",
+                                    "main_output_variable": "z",
+                                    "init_config": "/dev/null",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": false,
+                                    "model_params": {
+                                        "sloth_ice_fraction_schaake(1,double,m,node)": "0.0",
+                                        "sloth_ice_fraction_xinan(1,double,1,node)": "0.0",
+                                        "sloth_smp(1,double,1,node)": "0.0",
+                                        "EVAPOTRANS": "0.0"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libslothmodel.so",
+                                    "registration_function": "none"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "forcing": {
+                "path": "./cat-502641.csv"
+            }
+        },
+        "cat-502644": {
+            "formulations": [
+                {
+                    "name": "bmi_multi",
+                    "params": {
+                        "name": "bmi_multi",
+                        "model_type_name": "NoahOWP_CFE",
+                        "main_output_variable": "Q_OUT",
+                        "init_config": "",
+                        "allow_exceed_end_time": false,
+                        "fixed_time_step": false,
+                        "uses_forcing_file": false,
+                        "modules": [
+                            {
+                                "name": "bmi_c",
+                                "params": {
+                                    "name": "bmi_c",
+                                    "model_type_name": "CFE",
+                                    "main_output_variable": "Q_OUT",
+                                    "init_config": "/ngen/wb-538789/config/cat-502644_config.ini",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": true,
+                                    "forcing_file": "./cat-502644.csv",
+                                    "variables_names_map": {
+                                        "atmosphere_water__liquid_equivalent_precipitation_rate": "precip_rate",
+                                        "water_potential_evaporation_flux": "EVAPOTRANS",
+                                        "ice_fraction_schaake": "sloth_ice_fraction_schaake",
+                                        "ice_fraction_xinan": "sloth_ice_fraction_xinan",
+                                        "soil_moisture_profile": "sloth_smp"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libcfebmi.so.1.0.0",
+                                    "registration_function": "register_bmi_cfe"
+                                }
+                            },
+                            {
+                                "name": "bmi_c++",
+                                "params": {
+                                    "name": "bmi_c++",
+                                    "model_type_name": "SLOTH",
+                                    "main_output_variable": "z",
+                                    "init_config": "/dev/null",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": false,
+                                    "model_params": {
+                                        "sloth_ice_fraction_schaake(1,double,m,node)": "0.0",
+                                        "sloth_ice_fraction_xinan(1,double,1,node)": "0.0",
+                                        "sloth_smp(1,double,1,node)": "0.0",
+                                        "EVAPOTRANS": "0.0"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libslothmodel.so",
+                                    "registration_function": "none"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "forcing": {
+                "path": "./cat-502644.csv"
+            }
+        },
+        "cat-502642": {
+            "formulations": [
+                {
+                    "name": "bmi_multi",
+                    "params": {
+                        "name": "bmi_multi",
+                        "model_type_name": "NoahOWP_CFE",
+                        "main_output_variable": "Q_OUT",
+                        "init_config": "",
+                        "allow_exceed_end_time": false,
+                        "fixed_time_step": false,
+                        "uses_forcing_file": false,
+                        "modules": [
+                            {
+                                "name": "bmi_c",
+                                "params": {
+                                    "name": "bmi_c",
+                                    "model_type_name": "CFE",
+                                    "main_output_variable": "Q_OUT",
+                                    "init_config": "/ngen/wb-538789/config/cat-502642_config.ini",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": true,
+                                    "forcing_file": "./cat-502642.csv",
+                                    "variables_names_map": {
+                                        "atmosphere_water__liquid_equivalent_precipitation_rate": "precip_rate",
+                                        "water_potential_evaporation_flux": "EVAPOTRANS",
+                                        "ice_fraction_schaake": "sloth_ice_fraction_schaake",
+                                        "ice_fraction_xinan": "sloth_ice_fraction_xinan",
+                                        "soil_moisture_profile": "sloth_smp"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libcfebmi.so.1.0.0",
+                                    "registration_function": "register_bmi_cfe"
+                                }
+                            },
+                            {
+                                "name": "bmi_c++",
+                                "params": {
+                                    "name": "bmi_c++",
+                                    "model_type_name": "SLOTH",
+                                    "main_output_variable": "z",
+                                    "init_config": "/dev/null",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": false,
+                                    "model_params": {
+                                        "sloth_ice_fraction_schaake(1,double,m,node)": "0.0",
+                                        "sloth_ice_fraction_xinan(1,double,1,node)": "0.0",
+                                        "sloth_smp(1,double,1,node)": "0.0",
+                                        "EVAPOTRANS": "0.0"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libslothmodel.so",
+                                    "registration_function": "none"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "forcing": {
+                "path": "./cat-502642.csv"
+            }
+        },
+        "cat-502643": {
+            "formulations": [
+                {
+                    "name": "bmi_multi",
+                    "params": {
+                        "name": "bmi_multi",
+                        "model_type_name": "NoahOWP_CFE",
+                        "main_output_variable": "Q_OUT",
+                        "init_config": "",
+                        "allow_exceed_end_time": false,
+                        "fixed_time_step": false,
+                        "uses_forcing_file": false,
+                        "modules": [
+                            {
+                                "name": "bmi_c",
+                                "params": {
+                                    "name": "bmi_c",
+                                    "model_type_name": "CFE",
+                                    "main_output_variable": "Q_OUT",
+                                    "init_config": "/ngen/wb-538789/config/cat-502643_config.ini",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": true,
+                                    "forcing_file": "./cat-502643.csv",
+                                    "variables_names_map": {
+                                        "atmosphere_water__liquid_equivalent_precipitation_rate": "precip_rate",
+                                        "water_potential_evaporation_flux": "EVAPOTRANS",
+                                        "ice_fraction_schaake": "sloth_ice_fraction_schaake",
+                                        "ice_fraction_xinan": "sloth_ice_fraction_xinan",
+                                        "soil_moisture_profile": "sloth_smp"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libcfebmi.so.1.0.0",
+                                    "registration_function": "register_bmi_cfe"
+                                }
+                            },
+                            {
+                                "name": "bmi_c++",
+                                "params": {
+                                    "name": "bmi_c++",
+                                    "model_type_name": "SLOTH",
+                                    "main_output_variable": "z",
+                                    "init_config": "/dev/null",
+                                    "allow_exceed_end_time": true,
+                                    "fixed_time_step": false,
+                                    "uses_forcing_file": false,
+                                    "model_params": {
+                                        "sloth_ice_fraction_schaake(1,double,m,node)": "0.0",
+                                        "sloth_ice_fraction_xinan(1,double,1,node)": "0.0",
+                                        "sloth_smp(1,double,1,node)": "0.0",
+                                        "EVAPOTRANS": "0.0"
+                                    },
+                                    "library_file": "/dmod/shared_libs/libslothmodel.so",
+                                    "registration_function": "none"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "forcing": {
+                "path": "./cat-502643.csv"
+            }
+        }
+    },
+    "time": {
+        "start_time": "2015-01-01 00:00:00",
+        "end_time": "2015-12-31 00:00:00",
+        "output_interval": 3600
+    },
+    "routing": {
+        "t_route_config_file_with_path": "/ngen/ngen/data/config/ngen.yaml"
+    }
+}
